@@ -11,6 +11,7 @@ export class SocioCobroDto {
   @IsInt()
   @Min(0)
   dias_atraso!: number;
+    plan: any;
 }
 
 export class CobrosDto {
