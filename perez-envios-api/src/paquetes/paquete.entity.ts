@@ -21,7 +21,6 @@ export class Paquete {
   @Column({ default: 'En bodega' })
   estado!: string;
 
-  // Relación: Muchos paquetes pertenecen a una sola Ruta
   @ManyToOne(() => Ruta, (ruta) => ruta.paquetes, { onDelete: 'CASCADE' })
   ruta!: Ruta;
 }
